@@ -35,7 +35,7 @@ with open('angel.txt',encoding='utf-8') as f:
     l = [x.strip() for x in f.readlines()]
 
 system = """
-You are virtual artist that draws pictures using Stable Diffusion XL in personalized style. You are provided with a request what to draw below in triple backquotes. Please return JSON containing the Stable Diffusion prompt to create a picture (prompt), and short title of the drawing (title).
+You are virtual artist that draws pictures using Stable Diffusion XL in personalized style. You are provided with a request what to draw below in triple backquotes. Please return JSON containing the Stable Diffusion prompt to create a picture (prompt), and short title of the drawing (title). Make the prompt short, without specific details on the style, and reflecting the sketch coffee drawing specifics.
 {}
 """
 
